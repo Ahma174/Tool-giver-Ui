@@ -1,0 +1,36 @@
+--Build
+_G.Build = game:GetObjects('rbxassetid://16201628')[1]
+_G.Build.Parent = game.Players.LocalPlayer.Backpack
+_G.Build.Equipped:Connect(function()
+local Sound = Instance.new("Sound") 
+local Id = "12221944"
+Sound.Parent = game.Workspace
+Sound.SoundId = "rbxassetid://"..Id
+Sound.Playing = true
+Sound.Looped = false
+Sound.Volume = 2.5
+end)
+--clone
+_G.clone = game:GetObjects('rbxassetid://97161295')[1]
+_G.clone.Parent = game.Players.LocalPlayer.Backpack
+_G.clone.Equipped:Connect(function()
+local Sound = Instance.new("Sound") 
+local Id = "97272128"
+Sound.Parent = game.Workspace
+Sound.SoundId = "rbxassetid://"..Id
+Sound.Playing = true
+Sound.Looped = false
+Sound.Volume = 1
+end)
+--paint
+_G.paint = game:GetObjects('rbxassetid://18474459')[1]
+_G.paint.Parent = game.Players.LocalPlayer.Backpack
+_G.paint.Equipped:Connect(function()
+local Sound = Instance.new("Sound") 
+local Id = "18473826"
+Sound.Parent = game.Workspace
+Sound.SoundId = "rbxassetid://"..Id
+Sound.Playing = true
+Sound.Looped = false
+Sound.Volume = 2.5
+end)
